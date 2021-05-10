@@ -1,6 +1,7 @@
 import './App.scss';
 import React from 'react';
 import NavBar from './Components/NavBar';
+import HomePage from './Pages/HomePage';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <NavBar />
       </div>
       <div className="main-content">
-        
+        <HomePage /> 
       </div>
     </div>
   );
