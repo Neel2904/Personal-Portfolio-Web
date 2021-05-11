@@ -1,6 +1,6 @@
 import React from "react";
 
-function ServicesSection({ image, title }) {
+function ServicesSection({ image, title, text }) {
   return (
     <div className="ServicesSection">
       <div className="service">
@@ -8,7 +8,7 @@ function ServicesSection({ image, title }) {
             <img src={image} alt="" />
             <h5 className="s-title">{title}</h5>
             <p className="s-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ex!
+              {text}
             </p>
         </div>
       </div>
