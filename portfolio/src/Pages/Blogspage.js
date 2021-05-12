@@ -21,7 +21,7 @@ const Blogspage = () => {
                     </div>
                 })
             }
-            </div>            
+            </div>
         </div>
     );
 }
