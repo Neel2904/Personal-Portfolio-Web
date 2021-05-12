@@ -8,7 +8,7 @@ import NavBar from './Components/NavBar';
 //Pages
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
-import Portfolios from './Pages/Portfolios';
+import PortfolioPage from './Pages/PortfolioPage';
 import BlogsPage from './Pages/Blogspage';
 import ContactPage from './Pages/ContactPage';
 
@@ -29,7 +29,7 @@ function App() {
               <AboutPage />
             </Route>
             <Route path="/portfolios" exact>
-              <Portfolios />
+              <PortfolioPage />
             </Route>
             <Route path="/blogs" exact>
               <BlogsPage />
