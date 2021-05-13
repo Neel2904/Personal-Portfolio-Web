@@ -18,7 +18,15 @@
             font-size: 2rem;
         }
         .about-text{
-            padding:1 rem 0;
+            padding: 1rem 0;
+        }
+    }
+
+    @media screen and (max-width: 1400px){
+        flex-direction:column;
+        .about-info{
+            margin-left: 0;
+            margin-top: 1rem;
         }
     }
 }
@@ -68,4 +76,8 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
     row-gap: 3rem;
+    @media screen and (max-width: 1100px){
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+

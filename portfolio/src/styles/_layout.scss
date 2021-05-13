@@ -33,6 +33,15 @@
         position: relative;
         .content{
             margin:5rem 15rem;
+            @media screen and (max-width: 1100px){
+                margin: 2rem 10rem;
+            }
+            @media screen and (max-width: 1400px){
+                margin: 3rem 10rem;
+            }
+            @media screen and (max-width: 710px){
+                margin: 2rem 3rem;
+            }
         }
         @media screen and (max-width: 1000px){
             margin-left: 0;
@@ -44,8 +53,8 @@
 .nav-btn{
     position:absolute;
     z-index: 10;
-    right:10%;
-    top:10%;
+    right:7%;
+    top:5%;
     width:4rem;
     height:4rem;
     display: none;
