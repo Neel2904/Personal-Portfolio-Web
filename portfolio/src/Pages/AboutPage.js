@@ -40,8 +40,7 @@ function AboutPage() {
       <div className="services-container">
           <ServicesSection image={design} title={'Web Design'} text={'Lorem ipsum dolor sit amet consectetur '}/>
           <ServicesSection image={intelligence} title={'Artificial Intelligence'} text={'Lorem ipsum dolor sit amet consectetur '}/>
-          <ServicesSection image={gamedev} title={'Game Development'} text={'Lorem ipsum dolor sit amet consectetur '}/>
-          
+          <ServicesSection image={gamedev} title={'Game Development'} text={'Lorem ipsum dolor sit amet consectetur '}/>  
       </div>
     </div>
   );

@@ -15,24 +15,21 @@ function HomePage() {
           <span> Neel Gorasiya</span>
         </h1>
         <p className="h-sub-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-          vitae dicta aspernatur hic impedit consectetur error iste maiores
-          molestiae magni odio animi aut, eaque expedita aliquid beatae, aliquam
-          eligendi nesciunt.
+        It's Neel here. I am currently pursuing BE in computer engineering at GEC, Bhavnagar. Highely interested in Machine learning and Deep learning with Python. Always ready to learn new things. I would also like to meet with people and to do conversation having the same interest.
         </p>
         <div className="icons">
-          <Link className="icon-holder">
+          <a href="https://www.facebook.com/neel.gorasiya.29/" target="_blank" className="icon-holder">
             <FontAwesomeIcon icon={faFacebook} className="icon fb"/>
-          </Link>
-          <Link className="icon-holder">
+          </a>
+          <a href="https://github.com/Neel2904" target="_blank" className="icon-holder">
             <FontAwesomeIcon icon={faGithub} className="icon gh"/>
-          </Link>
-          <Link className="icon-holder">
+          </a>
+          <a href="https://twitter.com/Neel_2904" target="_blank" className="icon-holder">
             <FontAwesomeIcon icon={faTwitter} className="icon tw"/>
-          </Link>
-          <Link className="icon-holder">
-            <FontAwesomeIcon icon={faLinkedin} className="icon li"/>
-          </Link>
+          </a>
+          <a href="https://www.linkedin.com/in/gorasiyaneel/" target="_blank" className="icon-holder">
+            <FontAwesomeIcon icon={faLinkedin} className="icon tw"/>
+          </a>
         </div>
       </header>
     </div>

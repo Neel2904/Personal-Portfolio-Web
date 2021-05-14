@@ -1,81 +1,60 @@
-import port1 from '../img/portImages/maya-1.jpg';
-import port2 from '../img/portImages/port1.jpg';
-import port3 from '../img/portImages/port2.jpg';
-import port4 from '../img/portImages/port3.jpg';
-import port6 from '../img/portImages/port5.jpg';
-import port7 from '../img/portImages/port6.jpg';
+import port1 from '../img/portImages/face-exp.jfif';
+import port2 from '../img/portImages/covid-pred.jfif';
+import port3 from '../img/portImages/game-console.jfif';
+import port4 from '../img/portImages/ml-algos.jfif';
+import port5 from '../img/portImages/portfolio.png';
 
 const portfolios = [
     {
         id: 1,
-        category: 'Animation',
+        category: 'Flask',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
         icon2: 'Y',
         image: port1,
-        title: 'Autodesk Maya'
+        title: 'Face Expression Recognition'
     },
     {
         id: 2,
-        category: 'Python',
+        category: 'Deep Learning',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
         icon2: 'Y',
         image: port2,
-        title: 'Python Web Scrapping'
+        title: 'COVID prediction using X-Ray'
     },
     {
         id: 3,
-        category: 'Animation',
+        category: 'Python',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
         icon2: 'Y',
         image: port3,
-        title: 'Autodesk Maya'
+        title: 'Game-consol-using-HandGestures'
     },
     {
         id: 4,
-        category: 'Javascript',
+        category: 'Python',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
         icon2: 'Y',
         image: port4,
-        title: 'Vanilla Javascript Website'
+        title: 'Machine Learning Algorithms'
     },
     {
         id: 5,
-        category: 'React Js',
+        category: 'Front End',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
         icon2: 'Y',
-        image: port6,
+        image: port5,
         title: 'Getting Started With React'
     },
-    {
-        id: 6,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port7,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 7,
-        category: 'Test Port',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        image: port4,
-        title: 'Vanilla Javascript Website'
-    }
 ]
 
 export default portfolios;
