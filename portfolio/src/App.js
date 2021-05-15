@@ -27,9 +27,13 @@ function App() {
         <NavBar />
       </div>
       <div className="nav-btn" onClick={navClick}>
-        <div className="lines-1"></div>
+        <div className="nav-btn-burger">
+          <div className={`${navToggle ? `cross` : `dash`}`}>
+          </div>
+        </div>
+        {/* <div className="lines-1"></div>
         <div className="lines-2"></div>
-        <div className="lines-3"></div>
+        <div className="lines-3"></div> */}
       </div>
       <div className="main-content">
         <div className="content">

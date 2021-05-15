@@ -5,7 +5,6 @@
         background-color: #191d2b;
         position: fixed;
         border-right: 1px solid #2e344e;
-        transform-origin: left center;
         z-index: 11;
         @media screen and (max-width: 1000px){
             transition: all 0.4s ease-in-out;
@@ -55,28 +54,85 @@
     z-index: 10;
     right:7%;
     top:5%;
-    width:4rem;
-    height:4rem;
+    width: 40px;
+    height:40px;
     display: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     cursor:pointer;
-    .lines-1, .lines-2, .lines-3{
-        height: .4rem;
-        width: 100%;
-        background-color: #3858cc;
-        pointer-events: none;
-        display:none;
-        border-radius:20px;
-        &:not(:last-child){
-            margin-bottom: .5rem;
+    transition: all .5s ease-in-out;
+    border: 3px solid white;
+
+    .nav-btn-burger{
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+
+        .dash{
+            margin-top: 14px;
+            width: 20px;
+            height: 4px;
+            background-color:white;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(255,101,47,.2);
+            transition: all .5s ease-in-out;
         }
-    }
+        .dash::before,
+        .dash::after{
+                content:"";
+                position: absolute;
+                width: 20px;
+                height: 4px;
+                background-color:white;
+                border-radius: 15px;
+                box-shadow: 0 2px 5px rgba(255,101,47,.2);
+                transition: all .5s ease-in-out;
+            }
+        }
+        .dash::before{
+            transform: translateY(-7px);
+        }
+        .dash::after{
+            transform: translateY(7px);
+        }
+
+        // ANIMATION
+        .cross .nav-btn{
+            transform: translateY(-5px);
+            background: transparent;
+            box-shadow:none; 
+        }
+        .cross .dash::before{
+            transform: rotate(45deg) translate(5px, -5px);
+        }
+        .cross .dash::after{
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+
+
+    // .lines-1, .lines-2, .lines-3{
+    //     height: .3rem;
+    //     width: 85%;
+    //     background-color: #fff;
+    //     pointer-events: none;
+    //     display:none;
+    //     border-radius:20px;
+    //     transition: all cubic-bezier(0.26,0.1,0.27,1.55) 0.35;
+    //     &:not(:last-child){
+    //         margin-bottom: .5rem;
+    //     }
+    // }
     @media screen and (max-width: 1000px){
         display: block;
         .lines-1, .lines-2, .lines-3{
             display:block;
         }
+    }
+
+    .close{
+        margin-top:100px
     }
 }
