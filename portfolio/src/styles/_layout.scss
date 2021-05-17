@@ -62,19 +62,21 @@
     justify-content: center;
     cursor:pointer;
     transition: all .5s ease-in-out;
-    border: 3px solid white;
+    // border: 3px solid white;
 
     .nav-btn-burger{
         position: relative;
-        display: flex;
+        display: none;
         justify-content:center;
         align-items: center;
 
         .dash{
-            margin-top: 14px;
+            background-color: #037fff;
+        }
+
+        .dash, .cross{
             width: 20px;
             height: 4px;
-            background-color:white;
             border-radius: 15px;
             box-shadow: 0 2px 5px rgba(255,101,47,.2);
             transition: all .5s ease-in-out;
@@ -85,7 +87,7 @@
                 position: absolute;
                 width: 20px;
                 height: 4px;
-                background-color:white;
+                background-color:#037fff;
                 border-radius: 15px;
                 box-shadow: 0 2px 5px rgba(255,101,47,.2);
                 transition: all .5s ease-in-out;
@@ -99,16 +101,26 @@
         }
 
         // ANIMATION
-        .cross .nav-btn{
-            transform: translateY(-5px);
-            background: transparent;
-            box-shadow:none; 
+        .cross{
+            box-shadow:none;
+            &::after, &::before{
+                content: " ";
+                position: absolute;
+                width: 20px;
+                height: 4px;
+                background-color:#037fff;
+                border-radius: 15px;
+                box-shadow: 0 2px 5px rgba(255,101,47,.2);
+                transition: all .5s ease-in-out;
+            }
         }
-        .cross .dash::before{
-            transform: rotate(45deg) translate(5px, -5px);
+        .cross::after {
+            content: " ";
+            transform: rotate(225deg) ;
         }
-        .cross .dash::after{
-            transform: rotate(45deg) translate(5px, 5px);
+        .cross::before {
+            content: " ";
+            transform: rotate(-225deg);
         }
 
 
@@ -127,8 +139,8 @@
     // }
     @media screen and (max-width: 1000px){
         display: block;
-        .lines-1, .lines-2, .lines-3{
-            display:block;
+        .nav-btn-burger{
+            display:flex;
         }
     }
 
