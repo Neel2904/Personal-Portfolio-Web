@@ -28,7 +28,7 @@ function HomePage() {
             <FontAwesomeIcon icon={faTwitter} className="icon tw"/>
           </a>
           <a href="https://www.linkedin.com/in/gorasiyaneel/" target="_blank" className="icon-holder">
-            <FontAwesomeIcon icon={faLinkedin} className="icon tw"/>
+            <FontAwesomeIcon icon={faLinkedin} className="icon li"/>
           </a>
         </div>
       </header>

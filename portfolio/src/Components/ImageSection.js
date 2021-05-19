@@ -9,7 +9,7 @@ function ImageSection() {
       </div>
       <div className="about-info">
         <h4>
-          I am <span>Neel Gorasiya</span>
+          <span>Neel Gorasiya</span>
         </h4>
         <p className="about-text">
         It's Neel here. I am currently pursuing BE in computer engineering at GEC, Bhavnagar. Highely interested in Machine learning and Deep learning with Python. Always ready to learn new things. I would also like to meet with people and to do conversation having the same interest. <br />Strongly encouraged and self disciplined learner with major interest in Mathematics and Python. Want to make a stunning career in Data Science and Artificial Intelligence.

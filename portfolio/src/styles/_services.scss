@@ -12,7 +12,9 @@
             width: 100%;
         }
         &:hover{
+            transform: translateY(-10px);
             border-top: 8px solid #037fff;
+            box-shadow: 0 0 10px #1675d3be;
         }
         .service-content{
             padding: 1rem;

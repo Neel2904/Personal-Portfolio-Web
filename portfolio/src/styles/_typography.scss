@@ -1,50 +1,75 @@
-.HomePage{
+.HomePage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.hero-text {
+  color: #fff;
+  text-align: center;
+  font-size: 3.6rem;
+
+  span {
+    color: #037fff;
+  }
+}
+
+.h-sub-text {
+  text-align: center;
+  &::after {
+    content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    width: 80%;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid #037fff;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+  }
+  &:hover::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
 
-.hero-text{
-    color: #fff;
-    text-align: center;
-    font-size: 3.6rem;
-    span{
-        color: #037fff;
+  .icon-holder {
+    margin-right: 1rem;
+
+    .icon {
+      font-size: 2.3rem;
+      color: #a4acc4;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out;
     }
-} 
-
-.h-sub-text{
-    text-align: center;
-}
-
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    padding: 1.5rem 0;
-    
-    .icon-holder{
-        margin-right:1rem;
-        
-        .icon{
-           font-size: 2.3rem;
-           color:#a4acc4; 
-           transition: all .4s ease-in-out;
-        }
-        .fb:hover{
-            color:blue;
-        }
-        .gh:hover{
-            color:rgb(219, 18, 159);
-        }
-        .tw:hover{
-            color:rgb(0, 162, 255);
-        }
-        .li:hover{
-            color:blue;
-        }
+    .fb:hover {
+      color: blue;
+      box-shadow: 0 0 30px rgba(24, 24, 202, 0.596);
     }
+    .gh:hover {
+      color: rgb(219, 18, 159);
+      box-shadow: 0 0 30px rgba(209, 30, 155, 0.637);
+    }
+    .tw:hover {
+      color: rgb(0, 162, 255);
+      box-shadow: 0 0 30px rgba(29, 137, 199, 0.685);
+    }
+    .li:hover {
+      color: blue;
+      box-shadow: 0 0 30px rgba(24, 24, 202, 0.596);
+    }
+  }
 }

@@ -11,6 +11,12 @@
     .skill-bar{
         display: flex;
         align-items: center;
+        transition: all 0.4s ease-in-out;
+        &:hover{
+            .progress:hover{
+                box-shadow: 0 0 20px #1072d49f;
+            }
+        }
         .skill-progress{
             width: 100%;
             .progress{
